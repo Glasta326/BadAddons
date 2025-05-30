@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria.ModLoader;
+using Terraria.ModLoader.Config;
 
 namespace BadAddons.Content
 {
@@ -17,6 +18,13 @@ namespace BadAddons.Content
             {
                 BadAddonConfig.instance.EnableCameraRotation = false;
                 BadAddonConfig.instance.EnableMouseJitter = false;
+
+                // Save settings
+                BadAddonConfig.instance.OnChanged();
+                // Why this fuck is this not public
+                var type = typeof(ConfigManager);
+                var method = type.GetMethod("Save", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Static);
+                method.Invoke(null, new object[] { BadAddonConfig.instance });
             }
         }
 

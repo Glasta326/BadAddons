@@ -5,11 +5,7 @@ Items: {
 	}
 }
 
-// I have no idea why this one specifically paths so wierdly but i don't care and it works
-Keybinds: {
-	Mods.BadAddons.Keybinds.DisableAllModifers.DisplayName: Disable all modifiers
-}
-
+Keybinds.Mods.BadAddons.Keybinds.DisableAllModifers.DisplayName: Disable all modifiers
 UI.DisplayConfigMessage:
 	'''
 	It's possible to softlock yourself with mod settings. 
