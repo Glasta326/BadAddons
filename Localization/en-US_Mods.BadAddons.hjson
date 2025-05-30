@@ -5,6 +5,18 @@ Items: {
 	}
 }
 
+// I have no idea why this one specifically paths so wierdly but i don't care and it works
+Keybinds: {
+	Mods.BadAddons.Keybinds.DisableAllModifers.DisplayName: Disable all modifiers
+}
+
+UI.DisplayConfigMessage:
+	'''
+	It's possible to softlock yourself with mod settings. 
+	To avoid this, please make sure you are aware of the keybind {0} to disable all effects.
+	You can disable this message in the mod config menu.
+	'''
+
 Configs: {
 	BadAddonConfig: {
 		DisplayName: Bad Addon Config
@@ -50,12 +62,23 @@ Configs: {
 
 		CameraRotationMode: {
 			Label: Camera Rotation Mode
-			Tooltip: ""
+			Tooltip:
+				'''
+				Toggles how the camera behaves. 
+				Mode 0 : The camera is rotated based on mouse position
+				Mode 1 : The camera is rotated based on the angle to the nearest boss
+				Mode 2 : The camera rotates at a fixed rate
+				'''
 		}
 
 		CameraRotationSpeed: {
 			Label: Camera Rotation Speed
-			Tooltip: ""
+			Tooltip: Used in mode 2, rotates by this many degrees every tick (1/60th of a second)
+		}
+
+		DisplayConfigWarning: {
+			Label: Display text warning
+			Tooltip: Enable or disable the annoying text popup
 		}
 	}
 }

@@ -19,6 +19,12 @@ namespace BadAddons.Core
         public override ConfigScope Mode => ConfigScope.ClientSide;
         public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref NetworkText message) => true;
 
+        /// <summary>
+        /// Force the player to read the text and disable the message
+        /// </summary>
+        [DefaultValue(true)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool DisplayConfigWarning { get; set; }
 
         [Header("MouseTeleport")]
         #region Mouse teleport
