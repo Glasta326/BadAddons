@@ -1,0 +1,61 @@
+Items: {
+	testwodkaow: {
+		DisplayName: testwodkaow
+		Tooltip: ""
+	}
+}
+
+Configs: {
+	BadAddonConfig: {
+		DisplayName: Bad Addon Config
+
+		Headers: {
+			MouseTeleport: Mouse jitter settings
+			CameraRotation: Camera rotation settings
+		}
+
+		EnableMouseJitter: {
+			Label: Enable Mouse Jitter
+			Tooltip: Enables or disables mouse jittering
+		}
+
+		UseRelativeOffset: {
+			Label: Use Relative Offset
+			Tooltip:
+				'''
+				Enabled : The mouse will modify it's position based on where it already is, using min jump and max jump
+				Disabled : The mouse will choose anywhere onscreen
+				'''
+		}
+
+		MinJump: {
+			Label: Min mouse jump
+			Tooltip: The minimum % of screen width the mouse can move
+		}
+
+		MaxJump: {
+			Label: Max mouse jump
+			Tooltip: The maximum % of screen width the mouse can move
+		}
+
+		MaxInterval: {
+			Label: Max jump interval
+			Tooltip: The maximum amount of frames (1/60th of a second) that can pass before the mouse moves again
+		}
+
+		EnableCameraRotation: {
+			Label: Enable Camera Rotation
+			Tooltip: Enables or disables camera rotation modifiers
+		}
+
+		CameraRotationMode: {
+			Label: Camera Rotation Mode
+			Tooltip: ""
+		}
+
+		CameraRotationSpeed: {
+			Label: Camera Rotation Speed
+			Tooltip: ""
+		}
+	}
+}

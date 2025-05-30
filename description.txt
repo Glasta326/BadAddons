@@ -1,0 +1,1 @@
+Contains various gameplay modifiers and effects for challenges or just general CBT

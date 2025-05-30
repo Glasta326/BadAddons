@@ -1,0 +1,3 @@
+displayName = Bad addons
+author = Glasta
+version = 1.2.04
