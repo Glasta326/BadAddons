@@ -82,8 +82,8 @@ Configs: {
 			Label: Enable Cursor Hitbox
 			Tooltip:
 				'''
-				Gives your cursor a linked hitbox to your player,
-				any projectiles or NPCs that would collide with your player will hit your cusor too
+				Gives your cursor a linked hitbox to your player.
+				Any projectiles or NPCs that would collide with your player will hit your cusor too
 				'''
 		}
 
