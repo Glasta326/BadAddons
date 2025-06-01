@@ -41,7 +41,6 @@ namespace BadAddons.Content.UI
             Main.spriteBatch.Begin();
             DynamicSpriteFont font = FontAssets.DeathText.Value;
             string message = Language.GetTextValue($"Mods.BadAddons.UI.DisplayConfigMessage", BadAddonKeybinds.ResetAllSettingsKey.KeybindString());
-            Main.NewText(message);
             int i = 0;
             foreach (string line in Utils.WordwrapString(message,font,(int)(Main.screenWidth/1.5f),20, out _))
             {

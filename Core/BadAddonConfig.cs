@@ -108,6 +108,58 @@ namespace BadAddons.Core
 
         #endregion
 
+        [Header("CursorHitbox")]
+        #region Cursor hitbox
 
+        /// <summary>
+        /// Hard toggle for cursor hitbox
+        /// </summary>
+        [DefaultValue(false)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool EnableCursorHitbox { get; set; }
+
+        /// <summary>
+        /// % modifer for the cursor's hitbox size
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [SliderColor(43, 180, 203, 192)]
+        [DefaultValue(100)]
+        [Range(1, 1000)]
+        [Increment(25)]
+        [Slider]
+        [DrawTicks]
+        public int CursorHitboxModifer { get; set; }
+
+        /// <summary>
+        /// When toggled on, the collision checks for any points of a hitbox intersecting with the mouse, rather than just the hitbox's center
+        /// Think of it like touhou collision vs avernus collision
+        /// </summary>
+        [DefaultValue(false)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool AccurateHitboxes { get; set; }
+
+        /// <summary>
+        /// 0 : Does not display hitbox
+        /// 1 : Displays a ring around the cursor
+        /// 2 : Displays a full circle around the cursor
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [SliderColor(43, 180, 203, 192)]
+        [DefaultValue(0)]
+        [Range(0, 2)]
+        [Increment(1)]
+        [Slider]
+        [DrawTicks]
+        public int HitboxDisplayMode { get; set; }
+
+
+        /// <summary>
+        /// Determines the color <see cref="HitboxDisplayMode"/> would use <br/>
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [DefaultValue(typeof(Color), "255, 0, 0, 200")]
+        public Color HitboxDisplayColor { get; set; }
+
+        #endregion
     }
 }

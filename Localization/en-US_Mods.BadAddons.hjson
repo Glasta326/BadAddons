@@ -20,6 +20,7 @@ Configs: {
 		Headers: {
 			MouseTeleport: Mouse jitter settings
 			CameraRotation: Camera rotation settings
+			CursorHitbox: Cursor hitbox settings
 		}
 
 		EnableMouseJitter: {
@@ -75,6 +76,44 @@ Configs: {
 		DisplayConfigWarning: {
 			Label: Display text warning
 			Tooltip: Enable or disable the annoying text popup
+		}
+
+		EnableCursorHitbox: {
+			Label: Enable Cursor Hitbox
+			Tooltip:
+				'''
+				Gives your cursor a linked hitbox to your player,
+				any projectiles or NPCs that would collide with your player will hit your cusor too
+				'''
+		}
+
+		CursorHitboxModifer: {
+			Label: Hitbox size modifer %
+			Tooltip: Modifies the radius of the cursor's hitbox. Max 1000%
+		}
+
+		AccurateHitboxes: {
+			Label: Accurate Hitboxes
+			Tooltip:
+				'''
+				The collision checks for any points of a hitbox intersecting with the mouse, rather than just the hitbox's center 
+				Think of it like touhou hitboxes when disabled, and Avernus hitboxes when enabled.
+				'''
+		}
+
+		HitboxDisplayMode: {
+			Label: Hitbox Display Mode
+			Tooltip:
+				'''
+				Mode 0 : Does not display hitbox
+				Mode 1 : Displays a ring around the cursor
+				Mode 2 : Displays a full circle around the cursor
+				'''
+		}
+
+		HitboxDisplayColor: {
+			Label: Hitbox Display Color
+			Tooltip: Determines the color of the cursor's hitbox
 		}
 	}
 }
