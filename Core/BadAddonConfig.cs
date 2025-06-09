@@ -22,6 +22,10 @@ namespace BadAddons.Core
 
         public override void OnChanged()
         {
+            if (Main.gameMenu)
+            {
+                return;
+            }
             // Refresh bomb countdown
             Main.LocalPlayer.GetModPlayer<TimeBomb>().AddTime(TimerMax);
         }

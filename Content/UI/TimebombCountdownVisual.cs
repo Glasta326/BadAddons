@@ -18,7 +18,7 @@ namespace BadAddons.Content.UI
     internal class TimebombCountdownVisual : ModSystem
     {
 
-        bool DontDraw => Main.gameMenu || !BadAddonConfig.instance.EnableTimeBomb || (BadAddonConfig.instance.DrawTimer && BadAddonConfig.instance.EnableTimeBomb) || Main.netMode != NetmodeID.SinglePlayer || Main.mapFullscreen;
+        bool DontDraw => Main.gameMenu || !BadAddonConfig.instance.EnableTimeBomb || !(BadAddonConfig.instance.DrawTimer && BadAddonConfig.instance.EnableTimeBomb) || Main.netMode != NetmodeID.SinglePlayer || Main.mapFullscreen;
 
         public override void OnModLoad()
         {
