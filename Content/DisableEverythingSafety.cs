@@ -19,6 +19,7 @@ namespace BadAddons.Content
                 BadAddonConfig.instance.EnableCameraRotation = false;
                 BadAddonConfig.instance.EnableMouseJitter = false;
                 BadAddonConfig.instance.EnableCursorHitbox = false;
+                BadAddonConfig.instance.EnableTimeBomb = false;
 
                 // Save settings
                 BadAddonConfig.instance.OnChanged();

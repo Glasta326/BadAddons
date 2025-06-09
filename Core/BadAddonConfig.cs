@@ -161,5 +161,59 @@ namespace BadAddons.Core
         public Color HitboxDisplayColor { get; set; }
 
         #endregion
+
+        [Header("TimeBomb")]
+        #region TimeBomb
+
+        /// <summary>
+        /// Hard toggle for the Time bomb
+        /// </summary>
+        [DefaultValue(false)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool EnableTimeBomb { get; set; }
+
+        /// <summary>
+        /// Only active during bossfights
+        /// </summary>
+        [DefaultValue(false)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool OnlyBossfight { get; set; }
+
+        /// <summary>
+        /// Draws a number above the player indicating how long is left
+        /// </summary>
+        [DefaultValue(false)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool DrawTimer { get; set; }
+
+        /// <summary>
+        /// The maximum value of the countdown timer (seconds). Will start at this once enabled
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [DefaultValue(TimeBomb.DefaultTimerMax)]
+        public int TimerMax { get; set; }
+
+        /// <summary>
+        /// How much time (seconds) is restored to the countdown. 
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [DefaultValue(TimeBomb.DefaultTimerMax)] // Default behaviour restores it to the maximum
+        public int TimerAdd { get; set; }
+
+        /// <summary>
+        /// The maximum radius (Tiles) away the timer pickup can spawn
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [DefaultValue(TimeBomb.DefaultMaxSpawnRadius)]
+        public int MaxSpawnRadius { get; set; }
+
+        /// <summary>
+        /// The minimum radius (Tiles) away the timer pickup can spawn
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [DefaultValue(TimeBomb.DefaultMinSpawnRadius)]
+        public int MinSpawnRadius { get; set; }
+
+        #endregion
     }
 }

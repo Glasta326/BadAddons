@@ -36,7 +36,9 @@ namespace BadAddons.Content.UI
             DisplayCircle = 2
         }
         public static DisplayModes DisplayMode => (DisplayModes)(BadAddonConfig.instance.HitboxDisplayMode);
-        bool DontDraw => Main.gameMenu || DisplayMode == DisplayModes.DoNotDisplay || Main.netMode != NetmodeID.SinglePlayer || Main.mapFullscreen;
+
+        public static bool Disabled => !BadAddonConfig.instance.EnableCursorHitbox;
+        bool DontDraw => Main.gameMenu || DisplayMode == DisplayModes.DoNotDisplay || Disabled || Main.netMode != NetmodeID.SinglePlayer || Main.mapFullscreen;
 
         private static Asset<Texture2D> RingTexture;
         private static Asset<Texture2D> CircleTexture;

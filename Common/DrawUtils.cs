@@ -38,16 +38,6 @@ namespace BadAddons.Common
             Main.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.NonPremultiplied, Main.DefaultSamplerState, DepthStencilState.None, Main.Rasterizer, null, Main.GameViewMatrix.TransformationMatrix);
         }
 
-        public static Asset<Texture2D> InvisibleTexture()
-        {
-            return ModContent.Request<Texture2D>("Atsalg/Assets/Textures/InvisibleTexture");
-        }
-
-        public static Asset<Texture2D> PlaceholderTexture()
-        {
-            return ModContent.Request<Texture2D>("Atsalg/Assets/Textures/PlaceholderTexture");
-        }
-
         #endregion
     }
 }

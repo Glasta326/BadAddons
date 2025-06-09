@@ -17,7 +17,7 @@ using Terraria.UI;
 namespace BadAddons.Content.UI
 {
     // This is mostly just based on how WOTG does it but without all the fancy fading shit
-    public class UISystem : ModSystem
+    public class SettingsWarning : ModSystem
     {
         bool DontDraw => Main.gameMenu || !BadAddonConfig.instance.DisplayConfigWarning || Main.playerInventory || Main.gamePaused || Main.netMode != NetmodeID.SinglePlayer || Main.mapFullscreen;
 

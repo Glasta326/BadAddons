@@ -6,12 +6,16 @@ Items: {
 }
 
 Keybinds.Mods.BadAddons.Keybinds.DisableAllModifers.DisplayName: Disable all modifiers
-UI.DisplayConfigMessage:
-	'''
-	It's possible to softlock yourself with mod settings. 
-	To avoid this, please make sure you are aware of the keybind {0} to disable all effects.
-	You can disable this message in the mod config menu.
-	'''
+
+UI: {
+	DisplayConfigMessage:
+		'''
+		It's possible to softlock yourself with mod settings. 
+		To avoid this, please make sure you are aware of the keybind {0} to disable all effects.
+		You can disable this message in the mod config menu.
+		'''
+	TimeBombDeathMessage: "{0} ran out of time."
+}
 
 Configs: {
 	BadAddonConfig: {
@@ -21,6 +25,7 @@ Configs: {
 			MouseTeleport: Mouse jitter settings
 			CameraRotation: Camera rotation settings
 			CursorHitbox: Cursor hitbox settings
+			TimeBomb: Time bomb settings
 		}
 
 		EnableMouseJitter: {
@@ -115,5 +120,46 @@ Configs: {
 			Label: Hitbox Display Color
 			Tooltip: Determines the color of the cursor's hitbox
 		}
+
+		EnableTimeBomb: {
+			Label: Enable Time Bomb
+			Tooltip: Enables or disables the time bomb
+		}
+
+		OnlyBossfight: {
+			Label: Bossfight only mode
+			Tooltip: The timer and pickup items are only active during bossfights
+		}
+
+		TimerMax: {
+			Label: Bomb timer maximum (Seconds)
+			Tooltip:
+				'''
+				The maximum value the bomb countdown timer can be at 
+				 The timer will start at this value when the setting is enabled
+				'''
+		}
+
+		TimerAdd: {
+			Label: Pickup timer addition (Seconds)
+			Tooltip: The amount of time the pickups add to the timer, set to the Bomb timer maximum or above to reset the timer fully when picked up
+		}
+
+		DrawTimer: {
+			Label: Draw countdown timer
+			Tooltip: Displays the time remaining above the player
+		}
+
+		MaxSpawnRadius: {
+			Label: Max pickup spawn radius
+			Tooltip: The maximum distance away from the player pickups can spawn
+		}
+
+		MinSpawnRadius: {
+			Label: Min pickup spawn radius
+			Tooltip: The minimum distance away from the player pickups can spawn
+		}
 	}
 }
+
+Projectiles.TimeBombPickup.DisplayName: Time Bomb Pickup

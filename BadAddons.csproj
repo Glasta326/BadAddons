@@ -8,8 +8,12 @@
 		
 	</PropertyGroup>
 	<ItemGroup>
+	  <None Remove="Assets\InvisibleTexture.png" />
+	  <None Remove="Assets\PlaceholderTexture.png" />
+	  <None Remove="Content\Projectiles\TimeBombPickup.png" />
+	</ItemGroup>
+	<ItemGroup>
 	  <Folder Include="Localization\" />
-	  <Folder Include="Assets\" />
 	</ItemGroup>
 
 	<!-- References -->
