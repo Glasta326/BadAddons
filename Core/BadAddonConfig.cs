@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Terraria;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
@@ -18,6 +19,12 @@ namespace BadAddons.Core
         public static BadAddonConfig instance => ModContent.GetInstance<BadAddonConfig>();
         public override ConfigScope Mode => ConfigScope.ClientSide;
         public override bool AcceptClientChanges(ModConfig pendingConfig, int whoAmI, ref NetworkText message) => true;
+
+        public override void OnChanged()
+        {
+            // Refresh bomb countdown
+            Main.LocalPlayer.GetModPlayer<TimeBomb>().AddTime(TimerMax);
+        }
 
         /// <summary>
         /// Force the player to read the text and disable the message
