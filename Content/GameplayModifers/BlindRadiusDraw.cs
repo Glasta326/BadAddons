@@ -72,7 +72,7 @@ namespace BadAddons.Content.GameplayModifers
             {
                 //taken from vanilla
                 Color color = Color.Black;
-                int num = (int)((float)Main.screenWidth * ScaleMulti);
+                int num = (int)((float)Main.screenWidth * (ScaleMulti/2));
                 int num2 = 0;
 
                 Rectangle rect = Main.player[Main.myPlayer].getRect();

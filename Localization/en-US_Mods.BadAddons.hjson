@@ -163,7 +163,7 @@ Configs: {
 
 		EnableVisionProblems: {
 			Label: Enable Vision Problems
-			Tooltip: "Enables or disables vision issues"
+			Tooltip: Enables or disables vision issues
 		}
 
 		ObscureMode: {
@@ -177,7 +177,7 @@ Configs: {
 
 		BlindRadius: {
 			Label: Obscured radius%
-			Tooltip: "The radius of obfuscation as a % of screen width"
+			Tooltip: The radius of obfuscation as a % of screen width
 		}
 	}
 }
