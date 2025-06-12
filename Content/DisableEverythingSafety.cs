@@ -20,6 +20,7 @@ namespace BadAddons.Content
                 BadAddonConfig.instance.EnableMouseJitter = false;
                 BadAddonConfig.instance.EnableCursorHitbox = false;
                 BadAddonConfig.instance.EnableTimeBomb = false;
+                BadAddonConfig.instance.EnableVisionProblems = false;
 
                 // Save settings
                 BadAddonConfig.instance.OnChanged();

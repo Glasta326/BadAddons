@@ -26,6 +26,7 @@ Configs: {
 			CameraRotation: Camera rotation settings
 			CursorHitbox: Cursor hitbox settings
 			TimeBomb: Time bomb settings
+			VisionProblems: Vision problems settings
 		}
 
 		EnableMouseJitter: {
@@ -158,6 +159,25 @@ Configs: {
 		MinSpawnRadius: {
 			Label: Min pickup spawn radius
 			Tooltip: The minimum distance away from the player pickups can spawn
+		}
+
+		EnableVisionProblems: {
+			Label: Enable Vision Problems
+			Tooltip: "Enables or disables vision issues"
+		}
+
+		ObscureMode: {
+			Label: Obscure Mode
+			Tooltip:
+				'''
+				Mode 0 : Obscures vision inside the radius
+				Mode 1 : Obscures vision outside the radius
+				'''
+		}
+
+		BlindRadius: {
+			Label: Obscured radius%
+			Tooltip: "The radius of obfuscation as a % of screen width"
 		}
 	}
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Terraria;
+using Terraria.DataStructures;
 using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.Config;
@@ -226,5 +227,43 @@ namespace BadAddons.Core
         public int MinSpawnRadius { get; set; }
 
         #endregion
+
+        [Header("VisionProblems")]
+        #region Vision Problems
+
+        /// <summary>
+        /// Hard toggle for the Time bomb
+        /// </summary>
+        [DefaultValue(false)]
+        [BackgroundColor(43, 180, 203, 192)]
+        public bool EnableVisionProblems { get; set; }
+
+        /// <summary>
+        /// 0 : Unable to see beyond a certain distance from the player
+        /// 1 : Unable to see within a certain distance from the player
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [SliderColor(43, 180, 203, 192)]
+        [DefaultValue(0)]
+        [Range(0, 1)]
+        [Increment(1)]
+        [Slider]
+        [DrawTicks]
+        public int ObscureMode { get; set; }
+
+        /// <summary>
+        /// The radius of vision obfuscation as a % of screen width
+        /// </summary>
+        [BackgroundColor(43, 180, 203, 192)]
+        [SliderColor(43, 180, 203, 192)]
+        [DefaultValue(20)]
+        [Range(0, 100)]
+        [Increment(1)]
+        [Slider]
+        [DrawTicks]
+        public int BlindRadius { get; set; }
+
+        #endregion
+
     }
 }

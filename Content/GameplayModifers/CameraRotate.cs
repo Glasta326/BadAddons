@@ -67,7 +67,8 @@ namespace BadAddons.Content.GameplayModifers
         
         public override void ModifyTransformMatrix(ref SpriteViewMatrix Transform)
         {
-            if (Disabled)
+            // lmao this crashes when unloading so we have to not call when in menu
+            if (Main.gameMenu)
             {
                 return;
             }
