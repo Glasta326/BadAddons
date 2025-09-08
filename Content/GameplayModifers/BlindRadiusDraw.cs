@@ -27,6 +27,7 @@ namespace BadAddons.Content.GameplayModifers
         private static Asset<Texture2D> NegativeCircleTexture;
         private static Asset<Texture2D> CircleTexture;
 
+        // Kinda pointless but whatever
         enum BlindModes
         {
             CantSeeClose = 0,
