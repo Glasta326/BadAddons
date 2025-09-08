@@ -232,7 +232,7 @@ namespace BadAddons.Core
         #region Vision Problems
 
         /// <summary>
-        /// Hard toggle for the Time bomb
+        /// Hard toggle for vision problems
         /// </summary>
         [DefaultValue(false)]
         [BackgroundColor(43, 180, 203, 192)]
